@@ -1,5 +1,13 @@
+body {
+  background-color: rgba(red, green, blue, 0, 5);
+}
+
 #products {
   background-color: #73cef1;
+}
+
+#collapse {
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 .card:hover {
