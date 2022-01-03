@@ -1,17 +1,13 @@
-body {
-  background-color: rgba(red, green, blue, 0, 5);
-}
-
 #products {
   background-color: #73cef1;
 }
 
-#collapse {
-  font-family: "Merriweather Sans", sans-serif;
+h1 {
+  text-align: center;
 }
 
-.card:hover {
-  padding: 1px 2px;
+#collapse {
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 .section {
@@ -34,4 +30,75 @@ body {
 .nav-item :hover {
   transform: scale(1.2);
   transition: 0, 2s;
+}
+
+.img-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0), rgba(5, 5, 5, 1));
+  top: 400px;
+  transition: all 0.2s ease-in;
+}
+
+.img-title p,
+h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  line-height: 20px;
+  position: relative;
+  top: 100px;
+  text-shadow: rgba(5, 5, 5, 0.5);
+}
+
+.card:hover .img-title {
+  top: 0;
+  transition: all 0.2s ease-out;
+}
+
+.container1 {
+  width: 1056px;
+  height: 980px;
+  background-color: #73cef1;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border: 10px;
+}
+
+.card img {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 1056px) {
+  .container1 {
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    width: 30%;
+    height: 15%;
+  }
+
+  .img-title {
+    position: absolute;
+  }
+  .img-title p,
+  h3 {
+    top: 10px;
+    font-size: 8pt;
+    line-height: 10px;
+  }
 }
