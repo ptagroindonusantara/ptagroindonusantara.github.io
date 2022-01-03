@@ -20,6 +20,112 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/projects/logo.jpeg" type="image/x-icon">
     <title>Agro Indo Jaya</title> 
+  
+  #products {
+  background-color: #73cef1;
+}
+
+h1 {
+  text-align: center;
+}
+
+#collapse {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.section {
+  padding-top: 6rem;
+}
+
+.carousel-item {
+  height: 500px;
+  width: 1200px;
+}
+
+.nama-tim {
+  font-size: 20px;
+}
+
+.new-tim {
+  background-color: #73cef1;
+}
+
+.nav-item :hover {
+  transform: scale(1.2);
+  transition: 0, 2s;
+}
+
+.img-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0), rgba(5, 5, 5, 1));
+  top: 400px;
+  transition: all 0.2s ease-in;
+}
+
+.img-title p,
+h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  line-height: 20px;
+  position: relative;
+  top: 100px;
+  text-shadow: rgba(5, 5, 5, 0.5);
+}
+
+.card:hover .img-title {
+  top: 0;
+  transition: all 0.2s ease-out;
+}
+
+.container1 {
+  width: 1056px;
+  height: 980px;
+  background-color: #73cef1;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border: 10px;
+}
+
+.card img {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 1056px) {
+  .container1 {
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    width: 30%;
+    height: 15%;
+  }
+
+  .img-title {
+    position: absolute;
+  }
+  .img-title p,
+  h3 {
+    top: 10px;
+    font-size: 8pt;
+    line-height: 10px;
+  }
+}
+  
   </head>
   <!-- header -->
     <div class="container-fluid p-5 border-bottom" id="collapse" style="background-color: #566ef8">
